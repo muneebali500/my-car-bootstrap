@@ -1,0 +1,16 @@
+#hero-home {
+  min-height: 26rem;
+  display: flex;
+  align-items: center;
+}
+
+#hero-home .hero-car {
+  bottom: -2rem;
+  width: 60%;
+}
+
+@media (max-width: 767px) {
+  #hero-home .hero-car {
+    width: 100%;
+  }
+}

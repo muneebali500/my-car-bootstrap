@@ -1,0 +1,136 @@
+/*!
+ * Template Name: Hostina Template
+ * Author: hostk.com
+ * Version: 1.0
+ * Description: Modern Responsive Bootstrap Hosting Template
+ * Created: 2025
+ */
+
+/*/////////////////////// #main-HEADER STYLE ////////////////////////*/
+
+#main-header {
+  min-height: 6rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--clr-black);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05), 0 2px 6px rgba(0, 0, 0, 0.7) !important;
+}
+
+#main-header .nav-item a,
+#main-header .nav-link {
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  color: #d5d5d5;
+  border-radius: var(--rounded-16);
+  transition: 0.3s linear;
+}
+
+#main-header .nav-item a:hover,
+#main-header .nav-link:hover,
+#main-header .navbar-nav .nav-link.active,
+#main-header .navbar-nav .nav-link.show {
+  background-color: #ffffff1a;
+}
+
+#main-header .navbar-toggler {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  box-shadow: none;
+  color: white !important;
+}
+
+#main-header .sign-up-btn {
+  color: var(--clr-primary);
+  padding: 0.5rem 2rem;
+  border: 1px solid var(--clr-primary);
+  border-radius: var(--rounded-16);
+  color: var(--clr-primary);
+  font-weight: 600;
+  font-size: 16px;
+  transition: var(--transition-base);
+}
+
+#main-header .sign-up-btn:hover {
+  border-color: #d5d5d5;
+  color: #d5d5d5;
+}
+
+/* Off-canvas menu styling */
+.offcanvas {
+  background-color: var(--clr-black);
+  color: #fff;
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.offcanvas-header .offcanvas-title {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.offcanvas-body .nav-item a {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.offcanvas-body .nav-item a:hover {
+  color: var(--color-text-dark);
+}
+
+/* Adjust dropdown menu styling within the offcanvas */
+.offcanvas .dropdown-menu {
+  background-color: rgba(20, 20, 20, 0.96) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.offcanvas .dropdown-item {
+  color: var(--color-text-dark);
+}
+
+.offcanvas .dropdown-item:hover {
+  color: #fff;
+}
+
+/* Customizing the close button */
+.offcanvas .btn-close {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") !important;
+  opacity: 1;
+}
+
+/* Responsive Logic */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    display: none !important;
+  }
+  #main-header .nav-item a,
+  #main-header .nav-link {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .offcanvas {
+    visibility: visible !important;
+    background-color: transparent !important;
+    border: none !important;
+    transform: none !important;
+    width: auto !important;
+    position: static;
+  }
+  .offcanvas-header,
+  .offcanvas .btn-close {
+    display: none;
+  }
+  .offcanvas-body {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    flex-grow: 1;
+  }
+  .offcanvas-body .navbar-nav {
+    flex-direction: row;
+  }
+}
