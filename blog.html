@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>المقالات - عربيتي</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/company-logo.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/company-logo.svg"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/company-logo.svg"
+    />
+
+    <link
+      href="https://db.onlinewebfonts.com/c/9004b72f96afb1e5f13389f489791113?family=ExpoArabic-Book"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/globals.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+  </head>
+  <body>
+    <header
+      id="main-header"
+      class="py-1 shadow-sm d-flex align-items-center"
+      data-animate="fadeIn"
+      data-animate-delay="700"
+    >
+      <div class="main-container">
+        <nav class="navbar navbar-expand-lg p-0">
+          <button
+            class="navbar-toggler ms-3"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-burger"></i>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header p-4">
+              <img
+                src="assets/images/company-logo.svg"
+                alt="Company Logo"
+                loading="lazy"
+                style="width: 100px"
+                class="ms-2"
+              />
+              <button
+                type="button"
+                class="btn-close me-auto ms-0"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-center gap-1 align-items-lg-center flex-grow-1"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">من نحن</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">المقالات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="store.html">المتجر</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="offers.html">عروضنا</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html">الاسئلة الشائعة</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">تواصل معنا</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero-common" class="position-relative">
+        <div class="main-container">
+          <div class="row">
+            <div class="content-wrap">
+              <h1
+                class="fw-bold text-center mb-3 fs-1"
+                data-animate="fadeInUp"
+                data-animate-delay="100"
+              >
+                المقالات
+              </h1>
+              <nav
+                aria-label="breadcrumb"
+                data-animate="fadeInUp"
+                data-animate-delay="200"
+              >
+                <ol class="breadcrumb d-flex gap-1 justify-content-center">
+                  <li class="breadcrumb-item">
+                    <a
+                      href="index.html"
+                      class="text-decoration-none clr-gray-4 fs-6"
+                      >الرئيسية
+                    </a>
+                  </li>
+                  <li
+                    class="breadcrumb-item clr-gray-4 fs-6"
+                    aria-current="page"
+                  >
+                    المقالات
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="store-items" class="section-padding">
+        <div class="main-container">
+          <div id="blog-items">
+            <ul class="row row-cols-lg-3 row-cols-md-2 g-3">
+              <li data-animate="fadeInRight" data-animate-delay="200">
+                <div
+                  class="card-item p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                >
+                  <div class="card-top">
+                    <figure
+                      style="height: 200px; border-radius: 8px"
+                      class="overflow-hidden mb-4"
+                    >
+                      <img
+                        src="assets/images/pic-3.png"
+                        alt="صورة"
+                        loading="lazy"
+                        class="cover transition-base"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="card-body px-3 pb-3 d-flex flex-column flex-grow-1"
+                  >
+                    <h3 class="card-title fs-6 fw-bold flex-between mb-3">
+                      أفضل 5 سيارات هجينة 2025
+                      <span class="card-date clr-gray-1" style="font-size: 14px"
+                        >23 اغسطس 2025</span
+                      >
+                    </h3>
+                    <p
+                      class="card-desc clr-gray-1 flex-grow-1"
+                      style="font-size: 14px"
+                    >
+                      أحدث وأفضل ماركات السيارات الهجينة. تحليل شامل للأداء
+                      والأسعار.
+                    </p>
+                    <a
+                      href="blog-1.html"
+                      class="button primary-btn fs-6 d-block"
+                      >قراءة المزيد</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li data-animate="fadeInUp" data-animate-delay="300">
+                <div
+                  class="card-item p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                >
+                  <div class="card-top">
+                    <figure
+                      style="height: 200px; border-radius: 8px"
+                      class="overflow-hidden mb-4"
+                    >
+                      <img
+                        src="assets/images/pic-4.png"
+                        alt="صورة"
+                        loading="lazy"
+                        class="cover transition-base"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="card-body px-3 pb-3 d-flex flex-column flex-grow-1"
+                  >
+                    <h3 class="card-title fs-6 fw-bold flex-between mb-3">
+                      مستقبل السيارات الكهربائية
+                      <span class="card-date clr-gray-1" style="font-size: 14px"
+                        >15 سبتمبر 2025</span
+                      >
+                    </h3>
+                    <p
+                      class="card-desc clr-gray-1 flex-grow-1"
+                      style="font-size: 14px"
+                    >
+                      تطورات تكنولوجيا السيارات الكهربائية وتأثيرها على السوق
+                      العالمي.
+                    </p>
+                    <a
+                      href="blog-2.html"
+                      class="button primary-btn fs-6 d-block"
+                      >قراءة المزيد</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li data-animate="fadeInLeft" data-animate-delay="400">
+                <div
+                  class="card-item p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                >
+                  <div class="card-top">
+                    <figure
+                      style="height: 200px; border-radius: 8px"
+                      class="overflow-hidden mb-4"
+                    >
+                      <img
+                        src="assets/images/pic-5.png"
+                        alt="صورة"
+                        loading="lazy"
+                        class="cover transition-base"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="card-body px-3 pb-3 d-flex flex-column flex-grow-1"
+                  >
+                    <h3 class="card-title fs-6 fw-bold flex-between mb-3">
+                      صيانة السيارة في الشتاء
+                      <span class="card-date clr-gray-1" style="font-size: 14px"
+                        >01 نوفمبر 2025</span
+                      >
+                    </h3>
+                    <p
+                      class="card-desc clr-gray-1 flex-grow-1"
+                      style="font-size: 14px"
+                    >
+                      دليل جاهزية السيارة للطقس البارد. يشمل فحص الإطارات وتغيير
+                      الزيوت.
+                    </p>
+                    <a
+                      href="blog-3.html"
+                      class="button primary-btn fs-6 d-block"
+                      >قراءة المزيد</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li data-animate="fadeInRight" data-animate-delay="500">
+                <div
+                  class="card-item p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                >
+                  <div class="card-top">
+                    <figure
+                      style="height: 200px; border-radius: 8px"
+                      class="overflow-hidden mb-4"
+                    >
+                      <img
+                        src="assets/images/pic-3.png"
+                        alt="صورة"
+                        loading="lazy"
+                        class="cover transition-base"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="card-body px-3 pb-3 d-flex flex-column flex-grow-1"
+                  >
+                    <h3 class="card-title fs-6 fw-bold flex-between mb-3">
+                      أخطاء شائعة عند شراء قطع الغيار
+                      <span class="card-date clr-gray-1" style="font-size: 14px"
+                        >10 أكتوبر 2025</span
+                      >
+                    </h3>
+                    <p
+                      class="card-desc clr-gray-1 flex-grow-1"
+                      style="font-size: 14px"
+                    >
+                      تعرف على أبرز الأخطاء التي يرتكبها المشترون وكيفية تجنبها.
+                    </p>
+                    <a
+                      href="blog-4.html"
+                      class="button primary-btn fs-6 d-block"
+                      >قراءة المزيد</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li data-animate="fadeInUp" data-animate-delay="600">
+                <div
+                  class="card-item p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                >
+                  <div class="card-top">
+                    <figure
+                      style="height: 200px; border-radius: 8px"
+                      class="overflow-hidden mb-4"
+                    >
+                      <img
+                        src="assets/images/pic-4.png"
+                        alt="صورة"
+                        loading="lazy"
+                        class="cover transition-base"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="card-body px-3 pb-3 d-flex flex-column flex-grow-1"
+                  >
+                    <h3 class="card-title fs-6 fw-bold flex-between mb-3">
+                      نصائح للحفاظ على محرك سيارتك
+                      <span class="card-date clr-gray-1" style="font-size: 14px"
+                        >05 أغسطس 2025</span
+                      >
+                    </h3>
+                    <p
+                      class="card-desc clr-gray-1 flex-grow-1"
+                      style="font-size: 14px"
+                    >
+                      إجراءات بسيطة وروتينية لتمديد عمر المحرك وتقليل الأعطال.
+                    </p>
+                    <a
+                      href="blog-5.html"
+                      class="button primary-btn fs-6 d-block"
+                      >قراءة المزيد</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li data-animate="fadeInLeft" data-animate-delay="700">
+                <div
+                  class="card-item p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                >
+                  <div class="card-top">
+                    <figure
+                      style="height: 200px; border-radius: 8px"
+                      class="overflow-hidden mb-4"
+                    >
+                      <img
+                        src="assets/images/pic-5.png"
+                        alt="صورة"
+                        loading="lazy"
+                        class="cover transition-base"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="card-body px-3 pb-3 d-flex flex-column flex-grow-1"
+                  >
+                    <h3 class="card-title fs-6 fw-bold flex-between mb-3">
+                      مقارنة بين إطارات الصيف والشتاء
+                      <span class="card-date clr-gray-1" style="font-size: 14px"
+                        >18 يوليو 2025</span
+                      >
+                    </h3>
+                    <p
+                      class="card-desc clr-gray-1 flex-grow-1"
+                      style="font-size: 14px"
+                    >
+                      معلومات مفصلة لمساعدتك في اختيار الإطارات المناسبة لجميع
+                      الفصول.
+                    </p>
+                    <a
+                      href="blog-6.html"
+                      class="button primary-btn fs-6 d-block"
+                      >قراءة المزيد</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li data-animate="fadeInRight" data-animate-delay="800">
+                <div
+                  class="card-item p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                >
+                  <div class="card-top">
+                    <figure
+                      style="height: 200px; border-radius: 8px"
+                      class="overflow-hidden mb-4"
+                    >
+                      <img
+                        src="assets/images/pic-3.png"
+                        alt="صورة"
+                        loading="lazy"
+                        class="cover transition-base"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="card-body px-3 pb-3 d-flex flex-column flex-grow-1"
+                  >
+                    <h3 class="card-title fs-6 fw-bold flex-between mb-3">
+                      كيفية اختيار زيت المحرك المناسب
+                      <span class="card-date clr-gray-1" style="font-size: 14px"
+                        >03 يونيو 2025</span
+                      >
+                    </h3>
+                    <p
+                      class="card-desc clr-gray-1 flex-grow-1"
+                      style="font-size: 14px"
+                    >
+                      دليل شامل لفهم رموز لزوجة الزيوت وتحديد الأفضل لسيارتك.
+                    </p>
+                    <a
+                      href="blog-7.html"
+                      class="button primary-btn fs-6 d-block"
+                      >قراءة المزيد</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li data-animate="fadeInUp" data-animate-delay="900">
+                <div
+                  class="card-item p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                >
+                  <div class="card-top">
+                    <figure
+                      style="height: 200px; border-radius: 8px"
+                      class="overflow-hidden mb-4"
+                    >
+                      <img
+                        src="assets/images/pic-4.png"
+                        alt="صورة"
+                        loading="lazy"
+                        class="cover transition-base"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="card-body px-3 pb-3 d-flex flex-column flex-grow-1"
+                  >
+                    <h3 class="card-title fs-6 fw-bold flex-between mb-3">
+                      مستقبل القيادة الذاتية
+                      <span class="card-date clr-gray-1" style="font-size: 14px"
+                        >20 مايو 2025</span
+                      >
+                    </h3>
+                    <p
+                      class="card-desc clr-gray-1 flex-grow-1"
+                      style="font-size: 14px"
+                    >
+                      نظرة على مستويات القيادة الذاتية المتوقعة وتأثيرها على
+                      سلامة الطرق.
+                    </p>
+                    <a
+                      href="blog-8.html"
+                      class="button primary-btn fs-6 d-block"
+                      >قراءة المزيد</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li data-animate="fadeInLeft" data-animate-delay="1000">
+                <div
+                  class="card-item p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                >
+                  <div class="card-top">
+                    <figure
+                      style="height: 200px; border-radius: 8px"
+                      class="overflow-hidden mb-4"
+                    >
+                      <img
+                        src="assets/images/pic-5.png"
+                        alt="صورة"
+                        loading="lazy"
+                        class="cover transition-base"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="card-body px-3 pb-3 d-flex flex-column flex-grow-1"
+                  >
+                    <h3 class="card-title fs-6 fw-bold flex-between mb-3">
+                      أهمية تغيير فلاتر الهواء والزيت
+                      <span class="card-date clr-gray-1" style="font-size: 14px"
+                        >12 أبريل 2025</span
+                      >
+                    </h3>
+                    <p
+                      class="card-desc clr-gray-1 flex-grow-1"
+                      style="font-size: 14px"
+                    >
+                      جدول الصيانة الموصى به لقطع الغيار الاستهلاكية الرئيسية
+                      وتأثيرها على كفاءة السيارة.
+                    </p>
+                    <a
+                      href="blog-9.html"
+                      class="button primary-btn fs-6 d-block"
+                      >قراءة المزيد</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="d-flex justify-content-between align-items-center flex-wrap gap-4 mt-2 mt-md-5"
+          >
+            <p
+              id="pagination-count"
+              class="clr-gray-1 order-2 order-md-1 mb-0 fs-5"
+            >
+              عرض 20 من 60 نتيجة
+            </p>
+
+            <nav
+              aria-label="Page navigation"
+              class="order-1 order-md-2 mb-3 my-md-0 mt-5"
+            >
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="position-relative box-gradient border-r-gradient rounded-30">
+      <div
+        class="main-container"
+        data-animate="fadeInUp"
+        data-animate-delay="200"
+      >
+        <div class="row g-4">
+          <div class="col-lg-5 mt-0">
+            <div class="d-flex gap-1 align-items-center">
+              <img
+                src="assets/images/company-logo.svg"
+                alt="Kowk Logo"
+                loading="lazy"
+                class="ms-2"
+                style="width: 5rem"
+              />
+              <span class="fs-4 fw-bold">عربيتي</span>
+            </div>
+            <p class="fs-6 clr-gray-4 lh-base mt-1" style="max-width: 25rem">
+              بحاجة لملابسك بسرعة؟ اختر خدمة "الغسيل في نفس اليوم" واستلم ملابسك
+              نظيفة، مجففة، ومكوية خلال 24 ساعة فقط. مثالية للمناسبات المفاجئة!
+            </p>
+
+            <div class="social-icons d-flex gap-3 mt-3">
+              <a href="#" class="social-icon flex-center rounded-circle">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a href="#" class="social-icon flex-center rounded-circle">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon flex-center rounded-circle">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="#" class="social-icon flex-center rounded-circle">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-7 row g-4 g-lg-0">
+            <div class="col-lg-4 col-6">
+              <h4 class="nav-title">روابط هامة</h4>
+              <ul>
+                <li>
+                  <a href="index.html"
+                    ><span class="ms-2"
+                      ><img
+                        src="assets/images/two-arrow.svg"
+                        alt=" Two arrows"
+                        loading="lazy"
+                        class="icon" /></span
+                    >الرئيسية</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><span class="ms-2"
+                      ><img
+                        src="assets/images/two-arrow.svg"
+                        alt=" Two arrows"
+                        loading="lazy"
+                        class="icon" /></span
+                    >من نحن</a
+                  >
+                </li>
+                <li>
+                  <a href="blog.html"
+                    ><span class="ms-2"
+                      ><img
+                        src="assets/images/two-arrow.svg"
+                        alt=" Two arrows"
+                        loading="lazy"
+                        class="icon"
+                    /></span>
+                    المدونة</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-6">
+              <h4 class="nav-title">روابط اخري</h4>
+              <ul class="clr-gray">
+                <li>
+                  <a href="store.html"
+                    ><span class="ms-2"
+                      ><img
+                        src="assets/images/two-arrow.svg"
+                        alt=" Two arrows"
+                        loading="lazy"
+                        class="icon" /></span
+                    >المتجر</a
+                  >
+                </li>
+                <li>
+                  <a href="faq.html"
+                    ><span class="ms-2"
+                      ><img
+                        src="assets/images/two-arrow.svg"
+                        alt=" Two arrows"
+                        loading="lazy"
+                        class="icon" /></span
+                    >الاسئلة الشائعة</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><span class="ms-2"
+                      ><img
+                        src="assets/images/two-arrow.svg"
+                        alt=" Two arrows"
+                        loading="lazy"
+                        class="icon" /></span
+                    >تواصل معنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h4 class="nav-title">تواصل معنا</h4>
+              <ul class="clr-gray">
+                <li>
+                  <a class="d-flex gap-3">
+                    <i class="fa-solid fa-location-dot icon clr-gray-3"></i>
+                    شارع النزهة امام دار الدفاع الجوي, عمارات السعوديه، محافظة
+                    القاهرة .
+                  </a>
+                </li>
+                <li style="font-family: sans-serif">
+                  <a
+                    href="tel:+1019453861"
+                    class="d-flex gap-3 align-items-center"
+                  >
+                    <i class="fa-solid fa-phone clr-gray-3"></i>
+                    <span dir="ltr">+101 945 3861</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:example@example.com"
+                    class="d-flex gap-3 align-items-center"
+                    ><i class="fa-solid fa-envelope clr-gray-3"></i>
+                    example@example.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright-text mx-auto mt-5 position-relative">
+          <p class="pt-3 text-center mb-0 clr-black-2 fs-6">
+            جميع الحقوق محفوظة 2025 منصة عربيتي
+          </p>
+        </div>
+      </div>
+
+      <div class="circle-group">
+        <div
+          class="rounded-circle position-absolute"
+          style="
+            height: 6rem;
+            width: 6rem;
+            top: -2rem;
+            left: -2rem;
+            background-color: #ffffff0d;
+          "
+        ></div>
+        <div
+          class="rounded-circle position-absolute"
+          style="
+            height: 6rem;
+            width: 6rem;
+            top: -2rem;
+            left: 1rem;
+            background-color: #ffffff0d;
+          "
+        ></div>
+      </div>
+
+      <div class="circle-group">
+        <div
+          class="rounded-circle position-absolute"
+          style="
+            height: 6rem;
+            width: 6rem;
+            bottom: -2rem;
+            right: -1rem;
+            background-color: #ffffff0d;
+          "
+        ></div>
+        <div
+          class="rounded-circle position-absolute"
+          style="
+            height: 6rem;
+            width: 6rem;
+            bottom: -2rem;
+            right: 2rem;
+            background-color: #ffffff0d;
+          "
+        ></div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/pagination.js"></script>
+  </body>
+</html>

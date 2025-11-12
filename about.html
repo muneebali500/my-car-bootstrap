@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>عربيتي</title>
+    <title>من نحن - عربيتي</title>
 
     <link
       rel="icon"
@@ -52,7 +52,6 @@
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/common.css" />
-    <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
     <header
@@ -108,12 +107,12 @@
                 class="navbar-nav justify-content-center gap-1 align-items-lg-center flex-grow-1"
               >
                 <li class="nav-item">
-                  <a class="nav-link active border-gradient" href="index.html"
-                    >الرئيسية</a
-                  >
+                  <a class="nav-link" href="index.html">الرئيسية</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">من نحن</a>
+                  <a class="nav-link active border-gradient" href="about.html"
+                    >من نحن</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="blog.html">المقالات</a>
@@ -142,94 +141,38 @@
     </header>
 
     <main>
-      <section id="hero-home" class="position-relative">
+      <section id="hero-common" class="position-relative">
         <div class="main-container">
-          <div class="row gx-4 gy-4">
-            <div
-              class="col-lg-6 d-flex flex-column justify-content-center align-items-start"
-            >
+          <div class="row">
+            <div class="content-wrap">
               <h1
-                class="hero-heading mb-4 text-clr-black-1"
-                data-animate="fadeInDown"
+                class="fw-bold text-center mb-3 fs-1"
+                data-animate="fadeInUp"
+                data-animate-delay="100"
+              >
+                من نحن
+              </h1>
+              <nav
+                aria-label="breadcrumb"
+                data-animate="fadeInUp"
                 data-animate-delay="200"
               >
-                ابحث عن قطعة غيار سيارتك… وحدد الماركة و السنة الان
-              </h1>
-
-              <a
-                href="#"
-                class="button primary-btn"
-                data-animate="fadeInRight"
-                data-animate-delay="400"
-              >
-                ابحث الان
-              </a>
-            </div>
-
-            <img
-              src="assets/images/pic-1.png"
-              alt="Pic"
-              loading="lazy"
-              class="position-absolute start-0 hero-car"
-              data-animate="fadeIn"
-              data-animate-delay="600"
-            />
-          </div>
-        </div>
-
-        <div
-          class="position-absolute"
-          style="
-            width: 5rem;
-            height: 16rem;
-            background: linear-gradient(to bottom, #2f1d1dab, #ffffff03);
-            top: -1rem;
-            left: 20%;
-            z-index: -1;
-          "
-        ></div>
-        <div
-          class="position-absolute"
-          style="
-            width: 5rem;
-            height: 16rem;
-            background: linear-gradient(to bottom, #2f1d1dab, #ffffff03);
-            top: -1rem;
-            left: 13%;
-            z-index: -1;
-          "
-        ></div>
-      </section>
-
-      <section id="search-wrapper" class="py-5">
-        <div class="main-container">
-          <div
-            class="content p-4 bg-black-2 d-flex flex-column gap-4 flex-lg-row align-items-lg-end gap-lg-3 rounded-16"
-            data-animate="zoomIn"
-            data-animate-delay="200"
-          >
-            <div class="input-group">
-              <label class="d-block mb-2 fw-medium fs-5">حدد الماركة</label>
-              <select>
-                <option value="اختر الماركة من هنا">اختر الماركة من هنا</option>
-              </select>
-            </div>
-            <div class="input-group">
-              <label class="d-block mb-2 fw-medium fs-5">حدد الموديل</label>
-              <select>
-                <option value="اختر الماركة من هنا">اختر الماركة من هنا</option>
-              </select>
-            </div>
-            <div class="input-group">
-              <label class="d-block mb-2 fw-medium fs-5">حدد السنة</label>
-              <select>
-                <option value="اختر الماركة من هنا">اختر الماركة من هنا</option>
-              </select>
-            </div>
-            <div>
-              <button class="button primary-btn" style="padding: 0.8rem 1.4rem">
-                ابحث الان
-              </button>
+                <ol class="breadcrumb d-flex gap-1 justify-content-center">
+                  <li class="breadcrumb-item">
+                    <a
+                      href="index.html"
+                      class="text-decoration-none clr-gray-4 fs-6"
+                      >الرئيسية
+                    </a>
+                  </li>
+                  <li
+                    class="breadcrumb-item clr-gray-4 fs-6"
+                    aria-current="page"
+                  >
+                    من نحن
+                  </li>
+                </ol>
+              </nav>
             </div>
           </div>
         </div>
@@ -299,6 +242,99 @@
         </div>
       </section>
 
+      <section id="feature-about" class="section-padding">
+        <div class="main-container">
+          <div class="section-header-wrap">
+            <div>
+              <h4
+                class="section-subheading border-gradient"
+                data-animate="fadeInUp"
+                data-animate-delay="300"
+              >
+                عنا
+              </h4>
+              <h2
+                class="section-heading fs-1"
+                data-animate="fadeInUp"
+                data-animate-delay="200"
+              >
+                مهمتنا و رؤيتنا
+              </h2>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div
+              class="col-lg-6"
+              data-animate="fadeInRight"
+              data-animate-delay="200"
+            >
+              <figure class="rounded-4 overflow-hidden" style="height: 34rem">
+                <img
+                  src="assets/images/pic-16.png"
+                  alt="Pic"
+                  loading="lazy"
+                  class="cover"
+                />
+              </figure>
+            </div>
+
+            <div
+              class="col-lg-6"
+              data-animate="fadeInLeft"
+              data-animate-delay="200"
+            >
+              <div
+                class="box-gradient box-r-gradient rounded-4 bg-black-1 p-4 mb-4"
+              >
+                <div class="d-flex align-items-center gap-4 mb-4">
+                  <span
+                    class="rounded-3 flex-center fs-5"
+                    style="
+                      height: 3rem;
+                      width: 3rem;
+                      background-color: var(--clr-primary);
+                    "
+                    ><i class="fa-solid fa-bullseye"></i
+                  ></span>
+                  <h3 class="fs-4 fw-bold">مهمتنا</h3>
+                </div>
+                <p class="fs-6 clr-gray-1">
+                  مهمتنا هي أن نكون الوجهة الأولى لكل مالك سيارة يبحث عن قطع
+                  غيار أصلية وعالية الجودة بأسعار مناسبة وخدمة متميزة. نحن نسعى
+                  لتوفير تجربة تسوّق سهلة وموثوقة عبر الإنترنت، بحيث يتمكن
+                  العميل من إيجاد القطعة المناسبة لسيارته بسرعة ودون عناء. نؤمن
+                  أن السيارة جزء أساسي من حياة كل فرد، ولذلك نعمل على ضمان أن
+                  تبقى في أفضل حالاتها من خلال تزويد عملائنا بقطع غيار مضمونة
+                  وموثوقة بالتأكيد
+                </p>
+              </div>
+              <div class="box-gradient box-r-gradient rounded-4 bg-black-1 p-4">
+                <div class="d-flex align-items-center gap-4 mb-4">
+                  <span
+                    class="rounded-3 flex-center fs-5"
+                    style="
+                      height: 3rem;
+                      width: 3rem;
+                      background-color: var(--clr-primary);
+                    "
+                    ><i class="fa-solid fa-eye"></i
+                  ></span>
+                  <h3 class="fs-4 fw-bold">رؤيتنا</h3>
+                </div>
+                <p class="fs-6 clr-gray-1">
+                  رسالتنا هي بناء منصة إلكترونية متكاملة تربط بين العملاء وموردي
+                  قطع الغيار الموثوقين، مع تقديم خدمة عملاء استثنائية ودعم فني
+                  يساعد كل مستخدم في اختيار القطع الأنسب لسيارته. نهدف إلى أن
+                  نكون أكثر من مجرد متجر، بل شريك يعتمد عليه العميل للحفاظ على
+                  سيارته آمنة وفعّالة على الطريق. نحن ملتزمون بالشفافية و الجودة
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="news-section" class="news-section section-padding">
         <div class="main-container">
           <div class="content">
@@ -323,14 +359,14 @@
               </div>
               <a href="contact.html" class="button primary-btn red">عرض الكل</a>
             </div>
-            <ul class="row g-4">
+            <ul class="cards-container row g-4">
               <li
                 class="col-md-6 col-lg-4"
                 data-animate="fadeInRight"
                 data-animate-delay="200"
               >
                 <div
-                  class="card-item card-hover-effect p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                  class="card-item card-hover-effect p-2 border-lite-1 h-100 d-flex flex-column"
                 >
                   <div class="card-top">
                     <figure
@@ -376,7 +412,7 @@
                 data-animate-delay="300"
               >
                 <div
-                  class="card-item card-hover-effect p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                  class="card-item card-hover-effect p-2 border-lite-1 h-100 d-flex flex-column"
                 >
                   <div class="card-top">
                     <figure
@@ -422,7 +458,7 @@
                 data-animate-delay="200"
               >
                 <div
-                  class="card-item card-hover-effect p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                  class="card-item card-hover-effect p-2 border-lite-1 h-100 d-flex flex-column"
                 >
                   <div class="card-top">
                     <figure
@@ -498,7 +534,7 @@
                 data-animate-delay="200"
               >
                 <div
-                  class="card-item card-hover-effect p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                  class="card-item card-hover-effect p-2 border-lite-1 h-100 d-flex flex-column"
                 >
                   <div class="card-top">
                     <figure
@@ -558,7 +594,7 @@
                 data-animate-delay="300"
               >
                 <div
-                  class="card-item card-hover-effect p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                  class="card-item card-hover-effect p-2 border-lite-1 h-100 d-flex flex-column"
                 >
                   <div class="card-top">
                     <figure
@@ -618,7 +654,7 @@
                 data-animate-delay="200"
               >
                 <div
-                  class="card-item card-hover-effect p-2 border-lite-1 h-100 d-flex flex-column rounded-16"
+                  class="card-item card-hover-effect p-2 border-lite-1 h-100 d-flex flex-column"
                 >
                   <div class="card-top">
                     <figure
@@ -672,317 +708,6 @@
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="deals-section" class="deals-section section-padding bg-lite">
-        <div class="main-container">
-          <ul class="row g-4 mb-5">
-            <li class="col-lg-6">
-              <div
-                class="deal-card p-4 h-100 d-flex align-items-center rounded-16 overflow-hidden"
-                data-animate="fadeInLeft"
-                data-animate-delay="150"
-                style="
-                  background: linear-gradient(to right, #28351b54, #370007),
-                    url(assets/images/pic-7.jpg) no-repeat center / cover;
-                  min-height: 18rem;
-                "
-              >
-                <div class="hotel-card-content" style="max-width: 24rem">
-                  <h5 class="text-white fw-bold lh-base">
-                    عرض الصيف الكبير لصيانة سيارتك بالكامل باقل تكلفة ممكنة
-                  </h5>
-                  <p class="clr-gray-3 mb-4">
-                    استمتع بصيانة سيارتك بالكامل باقل تكلفة ممكنة. العرض سارٍي
-                    لمدة محدودة فلتر زيت مع زيت محرك اصلي مع خصم كبير
-                  </p>
-                  <button class="button primary-btn fs-6">استكشف العرض</button>
-                </div>
-              </div>
-            </li>
-
-            <li class="col-lg-6">
-              <div
-                class="deal-card p-4 h-100 d-flex align-items-center rounded-16 overflow-hidden position-relative"
-                data-animate="fadeInLeft"
-                data-animate-delay="150"
-                style="background-color: #a21000; min-height: 18rem"
-              >
-                <div
-                  class="hotel-card-content position-relative"
-                  style="max-width: 24rem; z-index: 5"
-                >
-                  <h5 class="text-white fw-bold lh-base">
-                    وفر حتى 40% على الحجوزات المبكرة
-                  </h5>
-                  <p class="clr-gray-3 mb-4">
-                    احجز رحلتك قبل موعد السفر بـ30 يومًا أو أكثر واستمتع بخصومات
-                    تصل إلى 40% على الفنادق والطيران! خطط مبكرًا… وسافر بأقل
-                    تكلفة.
-                  </p>
-                  <button
-                    class="button text-white"
-                    style="background-color: #cb1400"
-                  >
-                    استكشف العرض
-                  </button>
-                </div>
-
-                <div
-                  class="position-absolute rounded-circle"
-                  style="
-                    height: 400px;
-                    width: 400px;
-                    background-color: #ffffff33;
-                    left: -30%;
-                    top: -10%;
-                  "
-                ></div>
-
-                <img
-                  src="assets/images/pic-5.png"
-                  alt="Man Holding Card"
-                  loading="lazy"
-                  class="position-absolute bottom-0"
-                  style="width: 30%; left: 1rem"
-                />
-
-                <img
-                  src="assets/images/pic-19.svg"
-                  alt="Arrow Vector"
-                  loading="lazy"
-                  class="position-absolute w-25"
-                  style="left: 0; top: 0"
-                />
-              </div>
-            </li>
-          </ul>
-
-          <div id="deals-slider" class="deals-slider">
-            <div class="viewport">
-              <ul class="deals-track" id="dealsTrack">
-                <li class="slider-item">
-                  <div
-                    style="
-                      background: linear-gradient(
-                          to bottom,
-                          #28351b54 40%,
-                          #370007 80%
-                        ),
-                        url(assets/images/pic-8.jpg) no-repeat center / cover;
-                      min-height: 30rem;
-                    "
-                    class="d-flex align-items-end p-4 rounded-16"
-                  >
-                    <div class="text-end">
-                      <h4 class="fs-5 fw-bold lh-base">
-                        عرض علي تطوير اضاءة سيارتك مع اقوي عرض لمبات LED امامية
-                      </h4>
-
-                      <a href="#" class="button primary-btn d-block mt-4">
-                        استكشف العرض
-                      </a>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="slider-item">
-                  <div
-                    style="
-                      background: linear-gradient(
-                          to bottom,
-                          #28351b54,
-                          #370007 60%
-                        ),
-                        url(assets/images/pic-2.png) no-repeat center / cover;
-                      min-height: 30rem;
-                    "
-                    class="d-flex align-items-end p-4 rounded-16"
-                  >
-                    <div class="text-end">
-                      <h4 class="fs-5 fw-bold lh-base">
-                        احصل على فرامل احترافية لضمان قيادة آمنة ومريحة
-                      </h4>
-                      <p class="clr-gray-3">
-                        خصم خاص على تغيير طقم الفرامل بالكامل. لا تفوت فرصة
-                        الفحص المجاني!
-                      </p>
-
-                      <a href="#" class="button primary-btn d-block mt-4">
-                        احجز الآن
-                      </a>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="slider-item">
-                  <div
-                    style="
-                      background: linear-gradient(
-                          to bottom,
-                          #28351b54 40%,
-                          #370007 80%
-                        ),
-                        url(assets/images/pic-10.jpg) no-repeat center / cover;
-                      min-height: 30rem;
-                    "
-                    class="d-flex align-items-end p-4 rounded-16"
-                  >
-                    <div class="text-end">
-                      <h4 class="fs-5 fw-bold lh-base">
-                        خدمة تغيير زيت محرك اصطناعي كامل بخصم 25%
-                      </h4>
-
-                      <a href="#" class="button primary-btn d-block mt-4">
-                        شاهد التفاصيل
-                      </a>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="slider-item">
-                  <div
-                    style="
-                      background: linear-gradient(
-                          to bottom,
-                          #28351b54 40%,
-                          #370007 80%
-                        ),
-                        url(assets/images/pic-11.jpg) no-repeat center / cover;
-                      min-height: 30rem;
-                    "
-                    class="d-flex align-items-end p-4 rounded-16"
-                  >
-                    <div class="text-end">
-                      <h4 class="fs-5 fw-bold lh-base">
-                        صيانة مكيف السيارة: تبريد قوي ونقي هذا الصيف
-                      </h4>
-
-                      <a href="#" class="button primary-btn d-block mt-4">
-                        تصفح الخدمات
-                      </a>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="slider-item">
-                  <div
-                    style="
-                      background: linear-gradient(
-                          to bottom,
-                          #28351b54 40%,
-                          #370007 80%
-                        ),
-                        url(assets/images/pic-9.png) no-repeat center / cover;
-                      min-height: 30rem;
-                    "
-                    class="d-flex align-items-end p-4 rounded-16"
-                  >
-                    <div class="text-end">
-                      <h4 class="fs-5 fw-bold lh-base">
-                        عرض تلميع وهيكل كامل لإعادة لمعان سيارتك
-                      </h4>
-
-                      <a href="#" class="button primary-btn d-block mt-4">
-                        اطلب العرض
-                      </a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div
-              class="dot-wrapper"
-              id="dotWrapper"
-              aria-label="مؤشر الصفحات"
-            ></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact-section" class="section-padding">
-        <div class="main-container">
-          <div class="section-header-wrap">
-            <div>
-              <h4
-                class="section-subheading border-gradient"
-                data-animate="fadeInUp"
-                data-animate-delay="300"
-              >
-                تواصل معنا
-              </h4>
-              <h2
-                class="section-heading fs-1"
-                data-animate="fadeInUp"
-                data-animate-delay="200"
-              >
-                تواصل معنا
-              </h2>
-            </div>
-          </div>
-
-          <div class="row g-4">
-            <div
-              class="col-lg-5"
-              data-animate="fadeInRight"
-              data-animate-delay="200"
-            >
-              <figure style="height: 22rem" class="overflow-hidden rounded-16">
-                <img
-                  src="assets/images/pic-9.png"
-                  alt="Pic"
-                  loading="lazy"
-                  class="cover"
-                />
-              </figure>
-            </div>
-
-            <div
-              class="col-lg-7"
-              data-animate="fadeInLeft"
-              data-animate-delay="200"
-            >
-              <form
-                class="p-4 bg-lite rounded-16 h-100 flex-center box-gradient box-l-gradient"
-                style="background-color: #1d1d1d"
-              >
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="border-gradient">
-                      <input
-                        class="form-control"
-                        type="text"
-                        placeholder="البريد الالكتروني"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="border-gradient">
-                      <input
-                        class="form-control"
-                        type="text"
-                        placeholder="الاسم"
-                      />
-                    </div>
-                  </div>
-                  <div class="mb-2">
-                    <div class="border-gradient">
-                      <textarea
-                        class="form-control"
-                        rows="5"
-                        placeholder="اكتب رسالة"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div>
-                    <button class="button primary-btn">ارسل الان</button>
-                  </div>
-                </div>
-              </form>
-            </div>
           </div>
         </div>
       </section>
@@ -1104,7 +829,7 @@
                 </li>
               </ul>
             </div>
-            <div class="carousel-item">
+            <div class="col-lg-4">
               <h4 class="nav-title">تواصل معنا</h4>
               <ul class="clr-gray">
                 <li>
@@ -1196,143 +921,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/script.js"></script>
-
-    <script>
-      class Carousel {
-        constructor(carouselId) {
-          this.carousel = document.getElementById(carouselId);
-          // FIX: match the HTML id
-          this.track = document.getElementById("dealsTrack");
-          this.dotWrapper = document.getElementById("dotWrapper");
-
-          // Guard: if something is missing, bail gracefully
-          if (!this.carousel || !this.track || !this.dotWrapper) return;
-
-          this.items = this.track.querySelectorAll(".slider-item");
-          this.currentIndex = 0;
-          this.itemsPerView = this.getItemsPerView();
-
-          this.init();
-          this.setupEventListeners();
-        }
-
-        getItemsPerView() {
-          const width = window.innerWidth;
-          if (width >= 992) return 3;
-          if (width >= 768) return 2;
-          return 1;
-        }
-
-        init() {
-          this.createDots();
-          this.updateCarousel();
-        }
-
-        createDots() {
-          this.dotWrapper.innerHTML = "";
-          const maxIndex = Math.max(0, this.items.length - this.itemsPerView);
-
-          for (let i = 0; i <= maxIndex; i++) {
-            const dot = document.createElement("button");
-            dot.classList.add("dot");
-            dot.type = "button";
-            dot.setAttribute("aria-label", `الانتقال إلى الصفحة ${i + 1}`);
-            // Use aria-current (matches your CSS selector)
-            if (i === 0) dot.setAttribute("aria-current", "true");
-
-            dot.addEventListener("click", () => this.goToSlide(i));
-            this.dotWrapper.appendChild(dot);
-          }
-        }
-
-        updateCarousel() {
-          if (!this.items.length) return;
-
-          const itemWidth = this.items[0].offsetWidth;
-          const styles = getComputedStyle(this.track);
-          const gap = parseFloat(styles.gap) || 0;
-          const isRTL = styles.direction === "rtl";
-
-          const step = this.currentIndex * (itemWidth + gap);
-          const offset = isRTL ? step : -step;
-
-          this.track.style.transform = `translateX(${offset}px)`;
-          this.updateDots();
-        }
-
-        updateDots() {
-          const dots = this.dotWrapper.querySelectorAll(".dot");
-          dots.forEach((dot, index) => {
-            if (index === this.currentIndex) {
-              dot.setAttribute("aria-current", "true");
-            } else {
-              dot.removeAttribute("aria-current");
-            }
-          });
-        }
-
-        goToSlide(index) {
-          const maxIndex = Math.max(0, this.items.length - this.itemsPerView);
-          this.currentIndex = Math.max(0, Math.min(index, maxIndex));
-          this.updateCarousel();
-        }
-
-        next() {
-          const maxIndex = Math.max(0, this.items.length - this.itemsPerView);
-          if (this.currentIndex < maxIndex) {
-            this.currentIndex++;
-            this.updateCarousel();
-          }
-        }
-
-        prev() {
-          if (this.currentIndex > 0) {
-            this.currentIndex--;
-            this.updateCarousel();
-          }
-        }
-
-        setupEventListeners() {
-          window.addEventListener("resize", () => {
-            const newItemsPerView = this.getItemsPerView();
-            if (newItemsPerView !== this.itemsPerView) {
-              this.itemsPerView = newItemsPerView;
-              this.currentIndex = 0;
-              this.createDots();
-              this.updateCarousel();
-            }
-          });
-
-          // Touch/Swipe support
-          let startX = 0;
-          let isDragging = false;
-
-          this.track.addEventListener("touchstart", (e) => {
-            startX = e.touches[0].clientX;
-            isDragging = true;
-          });
-
-          this.track.addEventListener("touchmove", (e) => {
-            if (!isDragging) return;
-            e.preventDefault();
-          });
-
-          this.track.addEventListener("touchend", (e) => {
-            if (!isDragging) return;
-            const endX = e.changedTouches[0].clientX;
-            const diff = startX - endX;
-
-            if (Math.abs(diff) > 50) {
-              if (diff > 0) this.next();
-              else this.prev();
-            }
-            isDragging = false;
-          });
-        }
-      }
-
-      // Initialize carousel
-      new Carousel("deals-slider");
-    </script>
   </body>
 </html>

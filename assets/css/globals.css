@@ -10,6 +10,7 @@
   --clr-primary: #9f1000;
   --clr-black: #000000;
   --clr-white: #ffffff;
+  --clr-dark-red: #ff240b;
 
   /* bg color */
   --bg-black-1: #ffffff0d;
@@ -18,9 +19,6 @@
   --bg-black-4: #1d1d1d;
 
   /* text color */
-  /* --clr-black-1: #ffffff0d;
-  --clr-black-2: #1c1c1c;
-  --clr-black-3: #161c24; */
   --clr-gray-1: #a6a6a6;
   --clr-gray-2: #6d6d6d;
   --clr-gray-3: #a7a7a7;
@@ -30,7 +28,7 @@
   --clr-gray-7: #9c9c9c;
   --clr-gray-8: #7a7a7a;
 
-  --border-lite-1: 1.5px solid #ffffff17;
+  --border-lite-1: 2px solid #ffffff17;
   --border-lite-2: 1.2px solid #535353;
 
   --drop-shadow-1: 0 0 80px #02020212;
@@ -61,7 +59,7 @@ body {
   font-family: "ExpoArabic-Book", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #ffffff;
   background-color: #000000;
   position: relative;
@@ -132,7 +130,7 @@ section {
 }
 
 .section-heading {
-  font-size: clamp(28px, 2.8vw, 56px);
+  font-size: clamp(28px, 2.4vw, 56px);
   color: #ffffff;
   font-weight: 700;
   line-height: 1;
@@ -140,16 +138,13 @@ section {
 
 .section-subheading {
   font-size: clamp(15px, 1vw, 24px);
-  color: #535353;
+  color: #ff442f;
   margin-bottom: 1.4rem;
   font-weight: 500;
   padding: 14px 20px;
   background-color: #ffffff21;
   border-radius: var(--rounded-16);
   width: max-content;
-  border: 1px solid;
-  border-image: linear-gradient(30deg, #ffffff, #ffffff00);
-  border-image-slice: 1;
 }
 
 button {
@@ -171,6 +166,12 @@ button {
   font-weight: 500;
   text-align: center;
   transition: var(--transition-base);
+}
+
+.button.red {
+  color: #ff240b;
+  background-color: transparent;
+  font-size: 14px;
 }
 
 .button span {
@@ -199,13 +200,18 @@ button {
 .form-control,
 select {
   display: block;
-  background-color: #e4e4e4;
-  border: 1px solid #f7f7f7;
+  background-color: #ffffff1a;
+  border: none;
   border-radius: var(--rounded-16) !important;
   padding: 14px 20px;
   font-size: 1rem;
-  color: var(--clr-gray-2);
   width: 100%;
+  color: var(--clr-gray-2);
+}
+
+.form-control::placeholder,
+select::placeholder {
+  color: var(--clr-gray-7);
 }
 
 select {
@@ -222,19 +228,23 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid var(--clr-primary) !important;
   box-shadow: 0 0 4px var(--clr-primary) !important;
   outline: none !important;
 }
 
-input[type="checkbox"] {
+/* input[type="checkbox"] {
   display: inline-block;
   height: 1rem;
   width: 1rem;
+} */
+
+.form-check-input:checked {
+  background-color: var(--clr-primary);
+  border-color: var(--clr-primary);
 }
 
 .pagination {
-  --bs-pagination-color: #1c1c1c;
+  --bs-pagination-color: #ffffff;
   --bs-pagination-bg: #dbdbdb1c;
   --bs-pagination-border-color: #c5c5c5a6;
   --bs-pagination-hover-color: #fff;
@@ -275,12 +285,12 @@ input[type="checkbox"] {
 }
 
 /* Top + Left border gradient */
-.border-r-gradient::before {
-  background: linear-gradient(225deg, #900606, transparent 20%);
+.box-r-gradient::before {
+  background: linear-gradient(210deg, #900606, transparent 50%);
 }
 
 /* Top + Right border gradient */
-.border-l-gradient::before {
+.box-l-gradient::before {
   background: linear-gradient(140deg, #900606, transparent 30%);
 }
 
@@ -314,6 +324,9 @@ input[type="checkbox"] {
 .clr-primary {
   color: var(--clr-primary) !important;
 }
+.clr-dark-red {
+  color: var(--clr-dark-red) !important;
+}
 
 .clr-gray-1 {
   color: var(--clr-gray-1) !important;
@@ -340,15 +353,9 @@ input[type="checkbox"] {
   color: var(--clr-gray-8) !important;
 }
 
-/* .clr-black-1 {
-  color: var(--clr-black-1);
+.transition-base {
+  transition: var(--transition-base);
 }
-.clr-black-2 {
-  color: var(--clr-black-2);
-}
-.clr-black-3 {
-  color: var(--clr-black-3);
-} */
 
 .bg-black-1 {
   background-color: var(--bg-black-1);
@@ -380,13 +387,13 @@ input[type="checkbox"] {
   box-shadow: var(--drop-shadow-3);
 }
 
-/* [data-animate] {
+[data-animate] {
   opacity: 0;
 }
 
 [data-animate].animated {
   opacity: 1;
-} */
+}
 
 .fast-animation {
   --animate-duration: 0.5s;

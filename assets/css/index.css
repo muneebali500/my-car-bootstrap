@@ -1,7 +1,8 @@
 #hero-home {
-  min-height: 26rem;
+  min-height: 32rem;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 #hero-home .hero-car {
@@ -9,8 +10,29 @@
   width: 60%;
 }
 
+#hero-home .hero-heading {
+  position: relative;
+  padding-top: 7rem;
+}
+
+#hero-home .hero-heading::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 28%;
+  height: 6rem;
+  width: 6rem;
+  background-color: #4f2727e3;
+  border-radius: 50%;
+  z-index: -1;
+}
+
 @media (max-width: 767px) {
   #hero-home .hero-car {
     width: 100%;
   }
+}
+
+#search-wrapper select {
+  background-color: #e4e4e4;
 }

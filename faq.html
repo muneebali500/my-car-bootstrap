@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الاسئلة الشائعة - عربيتي</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/company-logo.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/company-logo.svg"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/company-logo.svg"
+    />
+
+    <link
+      href="https://db.onlinewebfonts.com/c/9004b72f96afb1e5f13389f489791113?family=ExpoArabic-Book"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/globals.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+  </head>
+  <body>
+    <header
+      id="main-header"
+      class="py-1 shadow-sm d-flex align-items-center"
+      data-animate="fadeIn"
+      data-animate-delay="700"
+    >
+      <div class="main-container">
+        <nav class="navbar navbar-expand-lg p-0">
+          <button
+            class="navbar-toggler ms-3"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-burger"></i>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header p-4">
+              <img
+                src="assets/images/company-logo.svg"
+                alt="Company Logo"
+                loading="lazy"
+                style="width: 100px"
+                class="ms-2"
+              />
+              <button
+                type="button"
+                class="btn-close me-auto ms-0"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-center gap-1 align-items-lg-center flex-grow-1"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">من نحن</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">المقالات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="store.html">المتجر</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active border-gradient" href="offers.html"
+                    >عروضنا</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html">الاسئلة الشائعة</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">تواصل معنا</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero-common" class="position-relative">
+        <div class="main-container">
+          <div class="row">
+            <div class="content-wrap">
+              <h1
+                class="fw-bold text-center mb-3 fs-1"
+                data-animate="fadeInUp"
+                data-animate-delay="100"
+              >
+                الاسئلة الشائعة
+              </h1>
+              <nav
+                aria-label="breadcrumb"
+                data-animate="fadeInUp"
+                data-animate-delay="200"
+              >
+                <ol class="breadcrumb d-flex gap-1 justify-content-center">
+                  <li class="breadcrumb-item">
+                    <a
+                      href="index.html"
+                      class="text-decoration-none clr-gray-4 fs-6"
+                      >الرئيسية
+                    </a>
+                  </li>
+                  <li
+                    class="breadcrumb-item clr-gray-4 fs-6"
+                    aria-current="page"
+                  >
+                    الاسئلة الشائعة
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq-section" class="faq-section section-padding">
+        <div class="main-container">
+          <div class="content">
+            <div class="accordion" id="accordionExample">
+              <div
+                class="accordion-item mb-4"
+                data-animate="flipInX"
+                data-animate-delay="200"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button d-flex align-items-center fs-5 lh-base"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <i class="fas fa-chevron-up ms-4 accordion-icon"></i>
+                    إزاي أقدر أستخدم محرك البحث في الموقع علشان ألاقي قطع الغيار
+                    المناسبة ؟
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body px-4 px-md-5 fs-6">
+                    <p class="accor-desc">
+                      قدر تدخل على الصفحة الرئيسية أو المتجر وتكتب بيانات سيارتك
+                      عن طريق اختيار سنة الصنع وبعدها تختار الماركة ثم الموديل،
+                      وبمجرد ما تكمل البيانات دي الموقع هيعرضلك القطع اللي
+                      متوافقة مع سيارتك بس سواء كانت أصلية جديدة أو استيراد
+                      بحالة ممتازة،
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="accordion-item mb-4"
+                data-animate="flipInX"
+                data-animate-delay="200"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button d-flex align-items-center collapsed fs-5 lh-base"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <i class="fas fa-chevron-up ms-4 accordion-icon"></i>
+                    هل جميع قطع الغيار اللي موجودة على الموقع أصلية جديدة ولا في
+                    منها قطع مستعملة ؟
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body px-4 px-md-5 fs-6">
+                    <p class="accor-desc">
+                      نوفر نوعين من قطع الغيار لضمان تلبية جميع الاحتياجات
+                      والميزانيات:
+                      <br />1. قطع غيار أصلية جديدة: تأتي مباشرة من الشركات
+                      المصنعة بضمان. <br />2. قطع غيار مستعملة (استيراد): يتم
+                      استيرادها بحالة ممتازة ومضمونة من سيارات مفككة، ويتم فحصها
+                      بعناية لضمان الجودة العالية والأداء. يمكنك تحديد النوع
+                      الذي تفضله عند البحث.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="accordion-item mb-4"
+                data-animate="flipInX"
+                data-animate-delay="200"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button d-flex align-items-center collapsed fs-5 lh-base fs-5 lh-base"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <i class="fas fa-chevron-up ms-4 accordion-icon"></i>
+                    يه هي طرق الدفع اللي الموقع بيوفرها وهل أقدر أستخدم بطاقة
+                    فيزا أو ماستر كارد ؟
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body px-4 px-md-5 fs-6">
+                    <p class="accor-desc">
+                      نعم، يوفر الموقع عدة طرق دفع آمنة ومريحة، وتشمل:
+                      <br />- الدفع عن طريق بطاقات الائتمان (فيزا وماستر كارد).
+                      <br />- الدفع عند الاستلام (Cash on Delivery) في مناطق
+                      محددة. <br />- الدفع عن طريق خدمات الدفع الإلكتروني
+                      المحلية (مثل فودافون كاش أو خدمات مماثلة).
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="accordion-item mb-3"
+                data-animate="flipInX"
+                data-animate-delay="200"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button d-flex align-items-center collapsed fs-5 lh-base fs-5 lh-base"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    <i class="fas fa-chevron-up ms-4 accordion-icon"></i>
+                    و اشتريت قطعة غيار وطلعت مش مناسبة أو فيها مشكلة، هل أقدر
+                    أرجعها أو أبدلها ؟
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body px-4 px-md-5 fs-6">
+                    <p class="accor-desc">
+                      نعم، بالتأكيد. نقدم سياسة إرجاع واستبدال مرنة لضمان رضا
+                      العميل:
+                      <br />- يمكنك إرجاع القطعة أو استبدالها خلال فترة محددة
+                      (يُرجى مراجعة صفحة سياسة الإرجاع لمعرفة المدة الدقيقة).
+                      <br />- يُشترط أن تكون القطعة في حالتها الأصلية، ويجب
+                      تقديم فاتورة الشراء. إذا كانت القطعة غير مناسبة بسبب خطأ
+                      في وصف المنتج من طرفنا، فإننا نتحمل تكاليف الشحن.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="position-relative box-gradient border-r-gradient rounded-30">
+      <div
+        class="main-container"
+        data-animate="fadeInUp"
+        data-animate-delay="200"
+      >
+        <div class="row g-4">
+          <div class="col-lg-5 mt-0">
+            <div class="d-flex gap-1 align-items-center">
+              <img
+                src="assets/images/company-logo.svg"
+                alt="Kowk Logo"
+                loading="lazy"
+                class="ms-2"
+                style="width: 5rem"
+              />
+              <span class="fs-4 fw-bold">عربيتي</span>
+            </div>
+            <p class="fs-6 clr-gray-4 lh-base mt-1" style="max-width: 25rem">
+              بحاجة لملابسك بسرعة؟ اختر خدمة "الغسيل في نفس اليوم" واستلم ملابسك
+              نظيفة، مجففة، ومكوية خلال 24 ساعة فقط. مثالية للمناسبات المفاجئة!
+            </p>
+
+            <div class="social-icons d-flex gap-3 mt-3">
+              <a href="#" class="social-icon flex-center rounded-circle">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a href="#" class="social-icon flex-center rounded-circle">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon flex-center rounded-circle">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="#" class="social-icon flex-center rounded-circle">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-7 row g-4 g-lg-0">
+            <div class="col-lg-4 col-6">
+              <h4 class="nav-title">روابط هامة</h4>
+              <ul>
+                <li>
+                  <a href="index.html"
+                    ><span class="ms-2"
+                      ><img
+                        src="assets/images/two-arrow.svg"
+                        alt=" Two arrows"
+                        loading="lazy"
+                        class="icon" /></span
+                    >الرئيسية</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><span class="ms-2"
+                      ><img
+                        src="assets/images/two-arrow.svg"
+                        alt=" Two arrows"
+                        loading="lazy"
+                        class="icon" /></span
+                    >من نحن</a
+                  >
+                </li>
+                <li>
+                  <a href="blog.html"
+                    ><span class="ms-2"
+                      ><img
+                        src="assets/images/two-arrow.svg"
+                        alt=" Two arrows"
+                        loading="lazy"
+                        class="icon"
+                    /></span>
+                    المدونة</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-6">
+              <h4 class="nav-title">روابط اخري</h4>
+              <ul class="clr-gray">
+                <li>
+                  <a href="store.html"
+                    ><span class="ms-2"
+                      ><img
+                        src="assets/images/two-arrow.svg"
+                        alt=" Two arrows"
+                        loading="lazy"
+                        class="icon" /></span
+                    >المتجر</a
+                  >
+                </li>
+                <li>
+                  <a href="faq.html"
+                    ><span class="ms-2"
+                      ><img
+                        src="assets/images/two-arrow.svg"
+                        alt=" Two arrows"
+                        loading="lazy"
+                        class="icon" /></span
+                    >الاسئلة الشائعة</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><span class="ms-2"
+                      ><img
+                        src="assets/images/two-arrow.svg"
+                        alt=" Two arrows"
+                        loading="lazy"
+                        class="icon" /></span
+                    >تواصل معنا</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h4 class="nav-title">تواصل معنا</h4>
+              <ul class="clr-gray">
+                <li>
+                  <a class="d-flex gap-3">
+                    <i class="fa-solid fa-location-dot icon clr-gray-3"></i>
+                    شارع النزهة امام دار الدفاع الجوي, عمارات السعوديه، محافظة
+                    القاهرة .
+                  </a>
+                </li>
+                <li style="font-family: sans-serif">
+                  <a
+                    href="tel:+1019453861"
+                    class="d-flex gap-3 align-items-center"
+                  >
+                    <i class="fa-solid fa-phone clr-gray-3"></i>
+                    <span dir="ltr">+101 945 3861</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:example@example.com"
+                    class="d-flex gap-3 align-items-center"
+                    ><i class="fa-solid fa-envelope clr-gray-3"></i>
+                    example@example.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright-text mx-auto mt-5 position-relative">
+          <p class="pt-3 text-center mb-0 clr-black-2 fs-6">
+            جميع الحقوق محفوظة 2025 منصة عربيتي
+          </p>
+        </div>
+      </div>
+
+      <div class="circle-group">
+        <div
+          class="rounded-circle position-absolute"
+          style="
+            height: 6rem;
+            width: 6rem;
+            top: -2rem;
+            left: -2rem;
+            background-color: #ffffff0d;
+          "
+        ></div>
+        <div
+          class="rounded-circle position-absolute"
+          style="
+            height: 6rem;
+            width: 6rem;
+            top: -2rem;
+            left: 1rem;
+            background-color: #ffffff0d;
+          "
+        ></div>
+      </div>
+
+      <div class="circle-group">
+        <div
+          class="rounded-circle position-absolute"
+          style="
+            height: 6rem;
+            width: 6rem;
+            bottom: -2rem;
+            right: -1rem;
+            background-color: #ffffff0d;
+          "
+        ></div>
+        <div
+          class="rounded-circle position-absolute"
+          style="
+            height: 6rem;
+            width: 6rem;
+            bottom: -2rem;
+            right: 2rem;
+            background-color: #ffffff0d;
+          "
+        ></div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

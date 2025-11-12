@@ -1,9 +1,11 @@
 footer {
   position: relative;
   overflow: hidden;
-  padding: 4rem 0;
+  padding: 5rem 0 2rem;
   z-index: 10;
   border: 2px solid transparent;
+  border-radius: 0 !important;
+  border-top-right-radius: var(--rounded-30) !important;
 }
 
 footer.border-r-gradient::before {
@@ -25,7 +27,7 @@ footer li a .icon {
 
 footer li a:hover {
   transform: translateX(-5px);
-  color: var(--clr-primary);
+  color: #e94d3b;
 }
 
 footer .nav-title {

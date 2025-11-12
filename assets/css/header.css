@@ -10,11 +10,11 @@
 
 #main-header {
   min-height: 6rem;
-  position: sticky;
+  position: absolute;
+  width: 100%;
   top: 0;
   z-index: 10;
-  background-color: var(--clr-black);
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05), 0 2px 6px rgba(0, 0, 0, 0.7) !important;
+  background-color: transparent;
 }
 
 #main-header .nav-item a,
